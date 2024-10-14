@@ -1,1 +1,18 @@
-<p>broadcaster works!</p>
+<p-splitter
+  [style]="{ height: '100%' }"
+  [panelSizes]="[70, 30]"
+  [minSizes]="[50, 15]"
+  styleClass="mb-5"
+  layout="vertical"
+>
+  <ng-template pTemplate>
+    <div class="col flex align-items-center justify-content-center">
+      Panel 1
+    </div>
+  </ng-template>
+  <ng-template pTemplate>
+    <div class="col flex align-items-center justify-content-center">
+      Panel 2
+    </div>
+  </ng-template>
+</p-splitter>

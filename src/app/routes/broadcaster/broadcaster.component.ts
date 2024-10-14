@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { SplitterModule } from 'primeng/splitter';
 
 @Component({
   selector: 'app-broadcaster',
   standalone: true,
-  imports: [],
+  imports: [SplitterModule],
   templateUrl: './broadcaster.component.html',
-  styleUrl: './broadcaster.component.scss'
+  styleUrl: './broadcaster.component.scss',
 })
-export class BroadcasterComponent {
-
-}
+export class BroadcasterComponent {}
