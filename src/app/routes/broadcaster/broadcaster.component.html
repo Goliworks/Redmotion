@@ -6,7 +6,10 @@
   layout="vertical"
 >
   <ng-template pTemplate>
-    <div class="col flex align-items-center justify-content-center">
+    <div
+      [style]="{ height: '100%', width: '100%' }"
+      class="col flex align-items-center justify-content-center"
+    >
       <app-viewport />
     </div>
   </ng-template>
