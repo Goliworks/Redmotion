@@ -1,2 +1,5 @@
-<p>viewport-bar works!</p>
-<span>Text test</span>
+<div class="zoom flex flex-row">
+  <span>Zoom</span>
+  <p-slider [(ngModel)]="zoom" />
+  <p-inputNumber class="zoom-input" suffix="%" [(ngModel)]="zoom" />
+</div>

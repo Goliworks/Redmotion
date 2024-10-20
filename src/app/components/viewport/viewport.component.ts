@@ -37,7 +37,7 @@ export class ViewportComponent implements OnInit {
 
     const visibleZone = new Graphics();
     visibleZone.rect(0, 0, this.projectWidth, this.projectHeight);
-    visibleZone.fill(0x3b3f42);
+    visibleZone.fill(0x000000);
 
     workingArea.addChild(visibleZone);
   }

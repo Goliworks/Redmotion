@@ -2,4 +2,16 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  padding: 0 15px;
+}
+
+.zoom {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+
+  p-slider {
+    width: 100px;
+  }
 }
