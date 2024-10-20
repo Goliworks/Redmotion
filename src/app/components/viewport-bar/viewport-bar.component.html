@@ -1,5 +1,12 @@
 <div class="zoom flex flex-row">
   <span>Zoom</span>
-  <p-slider [(ngModel)]="zoom" />
-  <p-inputNumber class="zoom-input" suffix="%" [(ngModel)]="zoom" />
+  <p-slider [(ngModel)]="zoom" (onChange)="changeZoom($event)" />
+  <p-inputNumber
+    (onInput)="changeZoom($event)"
+    class="zoom-input"
+    suffix="%"
+    [min]="0"
+    [max]="100"
+    [(ngModel)]="zoom"
+  />
 </div>
