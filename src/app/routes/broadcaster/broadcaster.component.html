@@ -6,15 +6,27 @@
   layout="vertical"
 >
   <ng-template pTemplate>
-    <div
-      [style]="{ height: '100%', width: '100%' }"
-      class="col flex align-items-center justify-content-center"
-    >
+    <div [style]="{ height: '100%', width: '100%' }">
       <!-- <app-viewport /> -->
       <app-view-editor />
     </div>
   </ng-template>
   <ng-template pTemplate>
-    <div class="col flex align-items-center justify-content-center"></div>
+    <p-splitter
+      [panelSizes]="[33.33, 33.33, 33.33]"
+      [minSizes]="[15, 15, 15]"
+      [style]="{ height: '100%', width: '100%' }"
+      styleClass="mb-5"
+    >
+      <ng-template pTemplate>
+        <app-sources-panel />
+      </ng-template>
+      <ng-template pTemplate>
+        <div>Panel 2</div>
+      </ng-template>
+      <ng-template pTemplate>
+        <div>Panel 2</div>
+      </ng-template>
+    </p-splitter>
   </ng-template>
 </p-splitter>

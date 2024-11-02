@@ -1,0 +1,11 @@
+<div class="header">
+  @if (title) {
+    {{ title }}
+  } @else {
+    <ng-content select="[header]"></ng-content>
+  }
+</div>
+
+<div class="content">
+  <ng-content></ng-content>
+</div>

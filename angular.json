@@ -32,7 +32,8 @@
             "styles": [
               "src/styles.scss",
               "node_modules/primeng/resources/themes/aura-dark-pink/theme.css",
-              "node_modules/primeng/resources/primeng.min.css"
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
             ],
             "scripts": []
           },
