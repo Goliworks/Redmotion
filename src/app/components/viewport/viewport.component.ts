@@ -24,6 +24,10 @@ export class ViewportComponent implements OnInit {
     EnvironmentState.getZoom,
   );
 
+  protected lastElement$: Observable<any> = this.store.select(
+    EnvironmentState.getLastElement,
+  );
+
   protected zoom: number = 1;
 
   @ViewChild('viewport') viewport!: ElementRef;
@@ -58,6 +62,16 @@ export class ViewportComponent implements OnInit {
       workingArea.scale.set(zoom);
       this.zoom = zoom;
       this.workingAreaPosition(workingArea, app, zoom);
+    });
+
+    this.lastElement$.subscribe((element) => {
+      if (element) {
+        console.log(element);
+        element.anchor.set(0.5);
+        element.x = this.projectWidth / 2;
+        element.y = this.projectHeight / 2;
+        workingArea.addChild(element);
+      }
     });
   }
 

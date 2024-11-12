@@ -1,7 +1,12 @@
 <app-panel>
   <ng-content header>
     <span>Sources</span>
-    <p-button [outlined]="true" size="small" icon="bi bi-plus-lg" />
+    <p-button
+      [outlined]="true"
+      size="small"
+      icon="bi bi-plus-lg"
+      (click)="add()"
+    />
   </ng-content>
   <div></div>
 </app-panel>
